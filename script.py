@@ -24,3 +24,8 @@ for link in links:
   turtle_data[turtle_name] = [turtle.find("ul").get_text('|').split('|')]
 
 print(turtle_data)
+
+#Creating a dataframe
+turtle_df = pd.DataFrame.from_dict(turtle_data, orient='index')
+print(turtle_df)
+#From here, you can utilise Data Cleaning and Regex to get turtle_df into a usable state.
